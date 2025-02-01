@@ -31,28 +31,32 @@
         font-family: "Figtree", sans-serif;
       }
 
-      .root {
-        width: 100vw;
-        height: 100vh;
+      body {
         background-color: hsl(47, 88%, 63%);
+      }
+
+      .root {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        position: relative;
+        align-content: center;
+        justify-items: center;
+        flex-direction: column;
+        min-height: 100dvh;
         color: hsl(0, 0%, 7%);
       }
 
       .cardContainer {
-        width: 400px;
-        height: 500px;
-        display: flex;
-        align-items:center;
-        justify-content:center;
-        border-radius: 1rem;
+        background-color: white;
         padding: 1.5rem;
-        background-color: hsl(0, 0%, 100%);
-        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
-        border: 1px solid black;
+        border: 1px solid var(--gray-950);
+        border-radius: 20px;
+        max-width: 370px;
+        box-shadow: 8px 8px 0px hsl(0, 0%, 0%);
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
       }
 
       .cardPic {
